@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="rmon_statistics.css" />
+  <title>:: welcome to TEAM ENGINEERS ::</title>
+</head>
+<body>
+  <header class="flex_header">
+    <div class="teameng">TeamEng SG300-10PP 10-Port Gigabit PoE+ Managed Switch</div>
+    <div class="nav_info_container">
+      <a class="nav_info" href="#">TEAM LINK</a>
+      <a class="nav_info" href="login.html">Logout</a>
+      <a class="nav_info" href="#">About</a>
+    
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="sidenav">
+      <a href="home.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Configuration Management</button>
+        <div class="dropdown-content">
+          <a href="sysconfig.html">System Configuration</a>
+          <a href="switch_config.html">Switch Configuration</a>
+          <a href="stp_config.html">STP configuration and Global Settings</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Status Management</button>
+        <div class="dropdown-content">
+          <a href="rmon_statistics.html">RMON statistics</a>
+          <a href="ethernet_status.html">Ethernet Port Status</a>
+        </div>
+      </div>
+      <a href="#services">Maintenance</a>
+      <a href="#clients">System Log</a>
+      <div class="dropdown">
+        <button class="dropbtn">Spanning tree</button>
+        <div class="dropdown-content">
+          <a href="stpinterface.html">STP Interface Status</a>
+          <a href="rstpinterface.html">RSTP Interface Status</a>
+        </div>
+      </div>
+      <a href="#contact">Reboot</a>
+    </div>
+
+    <div class="mainbody">
+      <div class="stp_heading">Statistics</div>
+
+      <form action="">
+        <div class="style2">
+          <div style="display: flex">
+            <div style="min-width: 190px">Interface:</div>
+            <input type="radio" id="port" />
+            <label for="radio">Port</label>
+            <select
+              name=""
+              id="port"
+              style="margin-left: 10px; margin-right: 10px"
+            >
+              <option for="port">GET1</option>
+              <option for="port">GET2</option>
+              <option for="port">GET3</option>
+              <option for="port">GET4</option>
+              <option for="port">GET5</option>
+              <option for="port">GET6</option>
+              <option for="port">GET7</option>
+              <option for="port">GET8</option>
+              <option for="port">GET9</option>
+              <option for="port">GET10</option>
+            </select>
+            <!-- <input type="radio" /> -->
+            <!-- <label for="">LAG</label>
+            <select
+              name=""
+              id="lag"
+              style="margin-left: 10px; margin-right: 10px"
+            >
+              <option for="lag">GET1</option>
+              <option for="lag">GET2</option>
+              <option for="lag">GET3</option>
+              <option for="lag">GET4</option>
+              <option for="lag">GET5</option>
+              <option for="lag">GET6</option>
+              <option for="lag">GET7</option>
+              <option for="lag">GET8</option>
+            </select> -->
+          </div>
+          <div style="display: flex">
+            <div style="min-width: 190px; margin-top: 10px">Refresh Rate:</div>
+            <div style="margin-top: 10px">
+              <div>
+                <input type="radio" /><label for="" style="margin-left: 10px"
+                  >No Refresh</label
+                >
+              </div>
+              <div>
+                <input type="radio" /><label for="" style="margin-left: 10px"
+                  >15 sec</label
+                >
+              </div>
+              <div>
+                <input type="radio" /><label for="" style="margin-left: 10px"
+                  >30 sec</label
+                >
+              </div>
+              <div>
+                <input type="radio" /><label for="" style="margin-left: 10px"
+                  >60 sec</label
+                >
+              </div>
+            </div>
+          </div>
+          <hr style="margin-top: 25px" />
+          <div>
+            <table>
+              <tr>
+                <td>Bytes Recieved:</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Drop Events:</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Packets Received:</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Broadcast Packets Received:</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Multicast Packets Received:</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>CRC & Align Errors:</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Undersize Packets:</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Oversize Packets:</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Fragments:</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Jabbers:</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Collisions:</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Frames of 64 Bytes:</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Frames of 65 to 127 Bytes:</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Frames of 128 to 255 Bytes:</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Frames of 256 to 511 Bytes:</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Frames of 512 to 1023 Bytes:</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>Frames of 1024 Bytes or More:</td>
+                <td>0</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <button class="button2">Clear Interface Counters</button>
+        <button class="button2">Refresh</button>
+        <!-- <button class="button2">View All Interfaces Statistics</button> -->
+      </form>
+    </div>
+
+    <footer class="footer">
+      <div>
+        © 2009.<a
+          class="footer_a"
+          href="http://www.teamengineers.in/"
+          target="_blank"
+          >www.teamengineers.in</a
+        >
+      </div>
+      <div>
+        Best viewed with IE 6.0 + at resolution of 1024 X 768 with text size as
+        medium.
+      </div>
+    </footer>
+
+    <script src="rmon_statistics.js"></script>
+  </body>
+</html>

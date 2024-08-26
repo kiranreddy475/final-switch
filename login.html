@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="login.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>:: welcome to TEAM ENGINEERS ::</title>
+  </head>
+  <body>
+    <div class="flex">
+      <div class="text_font_switch">TEAMLINK ETH SWITCH</div>
+
+      <form id="form_id" method="post" name="myform" class="flex_container">
+        <div class="flex">
+          <div class="lbl_user_pwd">Username:</div>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            class="input1"
+            required
+          />
+        </div>
+        <div class="flex">
+          <div class="lbl_user_pwd">Password:</div>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="input1 , input2"
+          />
+        </div>
+
+        <!-- <button class="login" id="submit" onclick="validate()">Log In</button> -->
+        <input
+          class="login"
+          type="button"
+          value="Login"
+          id="submit"
+          onclick="validate()"
+        />
+      </form>
+    </div>
+
+    <footer class="footer">
+      <div>© 2024 Team Engineers, Inc. All Rights Reserved.</div>
+      <div>
+        Team Engineers, Team Engineers Advance Technologies, and the team
+        Engineers logo are registered trademarks or trademarks of Cisco Systems,
+        Inc. and/or its affiliates in the United States and certain other
+        countries.
+      </div>
+    </footer>
+
+    <script src="login.js"></script>
+  </body>
+</html>

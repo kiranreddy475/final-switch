@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="stp_config.css" />
+    <title>:: welcome to TEAM ENGINEERS ::</title>
+  </head>
+  <body>
+    <header class="flex_header">
+      <div class="teameng">
+        TeamEng SG300-10PP 10-Port Gigabit PoE+ Managed Switch
+      </div>
+      <div class="nav_info_container">
+        <a class="nav_info" href="#">TEAM LINK</a>
+        <a class="nav_info" href="login.html">Logout</a>
+        <a class="nav_info" href="#">About</a>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="sidenav">
+        <a href="home.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn">Configuration Management</button>
+          <div class="dropdown-content">
+            <a href="sysconfig.html">System Configuration</a>
+            <a href="switch_config.html">Switch Configuration</a>
+            <a href="stp_config.html">STP configuration and Global Settings</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn">Status Management</button>
+          <div class="dropdown-content">
+            <a href="rmon_statistics.html">RMON statistics</a>
+            <a href="ethernet_status.html">Ethernet Port Status</a>
+          </div>
+        </div>
+        <a href="#services">Maintenance</a>
+        <a href="#clients">System Log</a>
+        <div class="dropdown">
+          <button class="dropbtn">Spanning tree</button>
+          <div class="dropdown-content">
+            <a href="stpinterface.html">STP Interface Status</a>
+            <a href="rstpinterface.html">RSTP Interface Status</a>
+          </div>
+        </div>
+        <a href="#contact">Reboot</a>
+      </div>
+      <div class="mainbody">
+        <div class="VMUX">STP Configuration and Global Settings</div>
+        <div class="right-box">
+          <!--  content for right box -->
+          <div class="form-group">
+            <h3>Global Settings</h3>
+            <table class="settings-table">
+              <tr>
+                <td>Spanning Tree Status</td>
+                <td><input type="checkbox" checked /> Enable</td>
+              </tr>
+              <tr>
+                <td>STP Loopback Guard</td>
+                <td><input type="checkbox" checked /> Enable</td>
+              </tr>
+              <tr>
+                <td>STP Operation Mode</td>
+                <td>
+                  <label
+                    ><input type="radio" name="stp-mode" checked /> Classic
+                    STP</label
+                  ><br />
+                  <label><input type="radio" name="stp-mode" /> Rapid STP</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="stp-mode" /> Multiple STP</label
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>BPDU Handling</td>
+                <td>
+                  <label
+                    ><input type="radio" name="bpdu-handling" checked />
+                    Filtering</label
+                  ><br />
+                  <label
+                    ><input type="radio" name="bpdu-handling" /> Flooding</label
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Path Cost Default Values</td>
+                <td>
+                  <label
+                    ><input type="radio" name="path-cost" checked />
+                    Short</label
+                  ><br />
+                  <label><input type="radio" name="path-cost" /> Long</label>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <h3>Bridge Settings</h3>
+          <table>
+            <tr>
+              <th class="setting"></th>
+              <th class="input"></th>
+              <th class="description"></th>
+            </tr>
+            <tr>
+              <td>Priority</td>
+              <td>
+                <input type="text" value="32768" />(Range 0-61440, Default:
+                32768)
+              </td>
+            </tr>
+            <tr>
+              <td>Hello Time</td>
+              <td>
+                <input type="text" value="2" />sec (Range: 1 - 10, Default: 2)
+              </td>
+            </tr>
+            <tr>
+              <td>Max Age</td>
+              <td>
+                <input type="text" value="20" />sec (Range: 6 - 40, Default: 20)
+              </td>
+            </tr>
+            <tr>
+              <td>Forward Delay</td>
+              <td>
+                <input type="text" value="15" />sec (Range: 4 - 30, Default: 15)
+              </td>
+            </tr>
+          </table>
+          <h3 style="margin-top: 60px">Designated Root</h3>
+          <table>
+            <tr>
+              <td>Bridge ID:</td>
+              <td>32768-70-1f53.10:4c:2c</td>
+            </tr>
+            <tr>
+              <td>Root Bridge ID:</td>
+              <td>32768-70-1f53.10:4c:2c</td>
+            </tr>
+            <tr>
+              <td>Root Port:</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Root Path Cost:</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Topology Changes Count:</td>
+              <td>0</td>
+            </tr>
+            <tr>
+              <td>Last Topology Change:</td>
+              <td>4D21H45M9S</td>
+            </tr>
+          </table>
+          <!-- <div class="firm-group">
+          <h3>Designated Root</h3>
+          <p1>Bridge ID: 32768-70-1f53.10:4c:2c</p1><br />
+          <p1>Root Bridge ID: 32768-70-1f53.10:4c:2c</p1><br />
+          <p1>Root Port: 0</p1><br />
+          <p1>Root Path Cost: 0</p1><br />
+          <p1>Topology Changes Count: 0</p1><br />
+          <p1>Last Topology Change: 4D21H45M9S</p1><br />
+        </div> -->
+          <div class="form-group">
+            <button>Update</button>
+            <button>Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div>
+        © 2009.<a
+          class="footer_a"
+          href="http://www.teamengineers.in/"
+          target="_blank"
+          >www.teamengineers.in</a
+        >
+      </div>
+      <div>
+        Best viewed with IE 6.0 + at resolution of 1024 X 768 with text size as
+        medium.
+      </div>
+    </footer>
+
+    <script src="stp_config.js"></script>
+  </body>
+</html>

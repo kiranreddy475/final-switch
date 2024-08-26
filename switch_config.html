@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="switch_config.css" />
+  <title>:: welcome to TEAM ENGINEERS ::</title>
+</head>
+<body>
+  <header class="flex_header">
+    <div class="teameng">TeamEng SG300-10PP 10-Port Gigabit PoE+ Managed Switch</div>
+    <div class="nav_info_container">
+      <a class="nav_info" href="#">TEAM LINK</a>
+      <a class="nav_info" href="login.html">Logout</a>
+      <a class="nav_info" href="#">About</a>
+    
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="sidenav">
+      <a href="home.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Configuration Management</button>
+        <div class="dropdown-content">
+          <a href="sysconfig.html">System Configuration</a>
+          <a href="switch_config.html">Switch Configuration</a>
+          <a href="stp_config.html">STP configuration and Global Settings</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Status Management</button>
+        <div class="dropdown-content">
+          <a href="rmon_statistics.html">RMON statistics</a>
+          <a href="ethernet_status.html">Ethernet Port Status</a>
+        </div>
+      </div>
+      <a href="#services">Maintenance</a>
+      <a href="#clients">System Log</a>
+      <div class="dropdown">
+        <button class="dropbtn">Spanning tree</button>
+        <div class="dropdown-content">
+          <a href="stpinterface.html">STP Interface Status</a>
+          <a href="rstpinterface.html">RSTP Interface Status</a>
+        </div>
+      </div>
+      <a href="#contact">Reboot</a>
+    </div>
+
+    <div class="mainbody">
+      <div class="VMUX">Switch Configuration</div>
+      <div class="right-box">
+        <!--  content for right box -->
+        <table style="width: 100%">
+          <tr
+            style="
+              color: #cb4556;
+              background-color: white;
+              text-align: center;
+              height: 33.88px;
+              font-weight: bold;
+            "
+          >
+            <td>Ethernet Switch Configuration</td>
+          </tr>
+        </table>
+        <table
+          style="
+            background-color: rgb(195, 223, 250);
+            font-family: Arial, Helvetica, sans-serif sans-serif;
+            width: 50%;
+            height: 400px;
+            padding-left: 50px;
+            font-size: 15px;
+          "
+        >
+          <tr class="style10">
+            <td></td>
+            <td class="style10">Autonegotiation</td>
+            <td class="style10">Speed</td>
+            <td class="style10">Duplex</td>
+            <td class="style10">Flow Control</td>
+          </tr>
+          <tr>
+            <td class="port">Port1</td>
+            <td>
+              <select name="" id="">
+                <option value="1">Enable</option>
+                <option value="2">Disable</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">10 Mbps</option>
+                <option value="2">100 Mbps</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">Full</option>
+                <option value="2">Half</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">Enable</option>
+                <option value="2">Disable</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="port">Port2</td>
+            <td>
+              <select name="" id="">
+                <option value="1">Enable</option>
+                <option value="2">Disable</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">10 Mbps</option>
+                <option value="2">100 Mbps</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">Full</option>
+                <option value="2">Half</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">Enable</option>
+                <option value="2">Disable</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="port">Port3</td>
+            <td>
+              <select name="" id="">
+                <option value="1">Enable</option>
+                <option value="2">Disable</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">10 Mbps</option>
+                <option value="2">100 Mbps</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">Full</option>
+                <option value="2">Half</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">Enable</option>
+                <option value="2">Disable</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="port">Port4</td>
+            <td>
+              <select name="" id="">
+                <option value="1">Enable</option>
+                <option value="2">Disable</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">10 Mbps</option>
+                <option value="2">100 Mbps</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">Full</option>
+                <option value="2">Half</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">Enable</option>
+                <option value="2">Disable</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="port">Port5</td>
+            <td>
+              <select name="" id="">
+                <option value="1">Enable</option>
+                <option value="2">Disable</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">10 Mbps</option>
+                <option value="2">100 Mbps</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">Full</option>
+                <option value="2">Half</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">Enable</option>
+                <option value="2">Disable</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="port">Port6</td>
+            <td>
+              <select name="" id="">
+                <option value="1">Enable</option>
+                <option value="2">Disable</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">10 Mbps</option>
+                <option value="2">100 Mbps</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">Full</option>
+                <option value="2">Half</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">Enable</option>
+                <option value="2">Disable</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="port">Port7</td>
+            <td>
+              <select name="" id="">
+                <option value="1">Enable</option>
+                <option value="2">Disable</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">10 Mbps</option>
+                <option value="2">100 Mbps</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">Full</option>
+                <option value="2">Half</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">Enable</option>
+                <option value="2">Disable</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="port">Port8</td>
+            <td>
+              <select name="" id="">
+                <option value="1">Enable</option>
+                <option value="2">Disable</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">10 Mbps</option>
+                <option value="2">100 Mbps</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">Full</option>
+                <option value="2">Half</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">Enable</option>
+                <option value="2">Disable</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="port">Port9</td>
+            <td>
+              <select name="" id="">
+                <option value="1">Enable</option>
+                <option value="2">Disable</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">10 Mbps</option>
+                <option value="2">100 Mbps</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">Full</option>
+                <option value="2">Half</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">Enable</option>
+                <option value="2">Disable</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="port">Port10</td>
+            <td>
+              <select name="" id="">
+                <option value="1">Enable</option>
+                <option value="2">Disable</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">10 Mbps</option>
+                <option value="2">100 Mbps</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">Full</option>
+                <option value="2">Half</option>
+              </select>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="1">Enable</option>
+                <option value="2">Disable</option>
+              </select>
+            </td>
+          </tr>
+          <tr align="right">
+            <td></td>
+            <td></td>
+
+            <td>
+              <input
+                  style="width: 80px; height: 23px; margin-top: 50px"  
+                type="button"
+                value="Update"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div>
+        © 2009.<a
+          class="footer_a"
+          href="http://www.teamengineers.in/"
+          target="_blank"
+          >www.teamengineers.in</a
+        >
+      </div>
+      <div>
+        Best viewed with IE 6.0 + at resolution of 1024 X 768 with text size as
+        medium.
+      </div>
+    </footer>
+
+    <script src="switch_config.js"></script>
+  </body>
+</html>

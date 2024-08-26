@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="stpinterface.css" />
+  <title>:: welcome to TEAM ENGINEERS ::</title>
+</head>
+<body>
+  <header class="flex_header">
+    <div class="teameng">TeamEng SG300-10PP 10-Port Gigabit PoE+ Managed Switch</div>
+    <div class="nav_info_container">
+      <a class="nav_info" href="#">TEAM LINK</a>
+      <a class="nav_info" href="login.html">Logout</a>
+      <a class="nav_info" href="#">About</a>
+    
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="sidenav">
+      <a href="home.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Configuration Management</button>
+        <div class="dropdown-content">
+          <a href="sysconfig.html">System Configuration</a>
+          <a href="switch_config.html">Switch Configuration</a>
+          <a href="stp_config.html">STP configuration and Global Settings</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Status Management</button>
+        <div class="dropdown-content">
+          <a href="rmon_statistics.html">RMON statistics</a>
+          <a href="ethernet_status.html">Ethernet Port Status</a>
+        </div>
+      </div>
+      <a href="#services">Maintenance</a>
+      <a href="#clients">System Log</a>
+      <div class="dropdown">
+        <button class="dropbtn">Spanning tree</button>
+        <div class="dropdown-content">
+          <a href="stpinterface.html">STP Interface Status</a>
+          <a href="rstpinterface.html">RSTP Interface Status</a>
+        </div>
+      </div>
+      <a href="#contact">Reboot</a>
+    </div>
+
+    <div class="mainbody">
+      <div class="VMUX">STP Interface Status</div>
+      <div class="right-box">
+        <!--  content for right box -->
+        <h2>STP Interface Status</h2>
+        <!-- <div class="filter">
+          <label for="interface-type">Filter: Interface Type equals to</label>
+
+          <button type="button">Go</button>
+        </div> -->
+        <table>
+          <thead>
+            <tr>
+              <!--New column header-->
+              <th>Entry No.</th>
+              <th>Interface</th>
+              <th>Port Role</th>
+              <th>Path Cost</th>
+              <th>Port State</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <!--New column data-->
+              <td>1</td>
+              <td>GET1</td>
+              <td>Designated</td>
+              <td>20000</td>
+              <td>Forwarding</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>GET2</td>
+              <td>Disabled</td>
+              <td>2000000</td>
+              <td>Disabled</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>GET3</td>
+              <td>Designated</td>
+              <td>2000000</td>
+              <td>Forwarding</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>GET4</td>
+              <td>Disabled</td>
+              <td>2000000</td>
+              <td>Disabled</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>GET5</td>
+              <td>Disabled</td>
+              <td>2000000</td>
+              <td>Disabled</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>GET6</td>
+              <td>Disabled</td>
+              <td>2000000</td>
+              <td>Disabled</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>GET7</td>
+              <td>Disabled</td>
+              <td>2000000</td>
+              <td>Disabled</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>GET8</td>
+              <td>Disabled</td>
+              <td>2000000</td>
+              <td>Disabled</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>GET9</td>
+              <td>Disabled</td>
+              <td>2000000</td>
+              <td>Disabled</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>GET10</td>
+              <td>Disabled</td>
+              <td>2000000</td>
+              <td>Disabled</td>
+            </tr>
+            <!--Additional rows can be written here-->
+          </tbody>
+        </table>
+        <div class="buttons">
+          <!-- <button type="button">Copy Settings</button> -->
+          <button type="button">Refresh</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div>
+        © 2009.<a
+          class="footer_a"
+          href="http://www.teamengineers.in/"
+          target="_blank"
+          >www.teamengineers.in</a
+        >
+      </div>
+      <div>
+        Best viewed with IE 6.0 + at resolution of 1024 X 768 with text size as
+        medium.
+      </div>
+    </footer>
+
+    <script src="stpinterface.js"></script>
+  </body>
+</html>

@@ -1,0 +1,217 @@
+/* Reset box-sizing and margins/paddings for all elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Background color for the body */
+body {
+  background-color: rgb(64, 123, 179);
+}
+
+/* Flex container for header */
+.flex_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Styling for the header title */
+.teameng {
+  font-family: Arial, sans-serif;
+  font-size: 22px;
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+/* Styling for header links */
+.nav_info_container {
+  display: flex;
+}
+
+.nav_info {
+  margin-right: 17px;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+}
+.nav_info:hover {
+  border-bottom: 1px solid white;
+}
+
+/* Container styling for main layout */
+.container {
+  display: flex;
+  margin-top: 20px;
+  height: calc(
+    88vh - 60px
+  ); /* Adjust height to fit screen minus header height */
+  margin-left: 10px;
+}
+
+/* Sidebar container styling */
+.sidenav {
+  background-color: rgb(195, 223, 250);
+  height: 100%;
+  width: 250px;
+  flex-shrink: 0;
+  padding-top: 0px;
+  position: relative;
+  margin-left: 5px;
+}
+
+/* General link/button styles inside the sidebar */
+.sidenav a,
+.dropbtn {
+  padding: 4px 8px;
+  text-decoration: none;
+  font-size: 12px;
+  color: black;
+  background-color: rgb(195, 223, 250);
+  text-align: left;
+  font-family: Arial, sans-serif;
+  display: block;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  border-bottom: 1px solid #53636a;
+}
+
+.sidenav a:hover,
+.dropbtn:hover {
+  background-color: lightblue;
+}
+
+/* Dropdown container styling */
+.dropdown {
+  position: relative;
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 100%; /* Position to the right of the dropdown button */
+  top: 0; /* Align with the top of the dropdown button */
+  background-color: white;
+  min-width: 160px;
+  white-space: nowrap;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  font-size: 12pt;
+  z-index: 1; /* Ensure the dropdown appears above other content */
+}
+
+.dropdown-content a {
+  color: black !important;
+  padding: 5px 10px;
+  text-decoration: none !important;
+  display: block;
+  background-color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: lightgreen !important;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Main content container */
+.mainbody {
+  flex: 1;
+  padding: 10px;
+  /* overflow-y: auto; */
+  background-color: rgb(64, 123, 179);
+}
+
+/* Header for the main content section */
+.VMUX {
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  background-color: #53636a;
+  color: white;
+  height: 49px;
+  padding-top: 13px;
+  text-align: center;
+  margin-top: -10px;
+}
+
+/* Right box content styling */
+.right-box {
+  background-color: rgb(195, 223, 250);
+  padding: 20px;
+  /* margin-right: 10px; */
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  min-height: 700px;
+}
+
+table {
+  width: 50%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  font-size: 12px;
+  height: 300px;
+  margin-top: 15px;
+}
+.filter {
+  margin-top: 20px;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 2px 6px;
+  text-align: left;
+  line-height: 1.1;
+  height: 30px;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+button {
+  padding: 0.3em 1em;
+  /* background-color: #007bff; */
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 1em;
+}
+
+button:hover {
+  background-color: lightskyblue;
+}
+
+/* Footer styling */
+.footer {
+  position: fixed;
+  bottom: 5px;
+  width: 100%;
+  background-color: transparent;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+/* Footer link styling */
+.footer_a {
+  color: white;
+  text-decoration: none;
+}

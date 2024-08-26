@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="sysconfig.css" />
+  <title>:: welcome to TEAM ENGINEERS ::</title>
+</head>
+<body>
+  <header class="flex_header">
+    <div class="teameng">TeamEng SG300-10PP 10-Port Gigabit PoE+ Managed Switch</div>
+    <div class="nav_info_container">
+      <a class="nav_info" href="#">TEAM LINK</a>
+      <a class="nav_info" href="login.html">Logout</a>
+      <a class="nav_info" href="#">About</a>
+      
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="sidenav">
+      <a href="home.html">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">Configuration Management</button>
+        <div class="dropdown-content">
+          <a href="sysconfig.html">System Configuration</a>
+          <a href="switch_config.html">Switch Configuration</a>
+          <a href="stp_config.html">STP configuration and Global Settings</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Status Management</button>
+        <div class="dropdown-content">
+          <a href="rmon_statistics.html">RMON statistics</a>
+          <a href="ethernet_status.html">Ethernet Port Status</a>
+        </div>
+      </div>
+      <a href="#services">Maintenance</a>
+      <a href="#clients">System Log</a>
+      <div class="dropdown">
+        <button class="dropbtn">Spanning tree</button>
+        <div class="dropdown-content">
+          <a href="stpinterface.html">STP Interface Status</a>
+          <a href="rstpinterface.html">RSTP Interface Status</a>
+        </div>
+      </div>
+      <a href="#contact">Reboot</a>
+    </div>
+    <div class="mainbody">
+      <div class="VMUX">System Configuration</div>
+      <div class="right-box">
+        <!--  content for right box -->
+        <table style="margin-left: 300px">
+          <tr>
+            <td style="padding-left: 50px">
+              <strong>System Configuration</strong>
+            </td>
+            <td style="padding-left: 350px">
+              <strong>RTC Configuration</strong>
+            </td>
+          </tr>
+        </table>
+        <table style="margin-top: 30px; margin-left: 250px">
+          <tr>
+            <td>DHCP</td>
+            <td>
+              <strong>:</strong>
+              <select name="" id="" style="width: 140px">
+                <option value="1">Enable</option>
+                <option value="2">Disable</option>
+              </select>
+            </td>
+            <td>Date</td>
+            <td>
+              <strong>:</strong>
+              <input
+                type="date"
+                name="date"
+                id="date"
+                value="2024-08-02"
+                style="width: 140px"
+              />
+            </td>
+          </tr>
+          <tr style="height: 50px">
+            <td></td>
+            <td style="padding-right: 200px">
+              <strong>Management Port Configuration</strong>
+            </td>
+            <td>Time</td>
+            <td>
+              <strong>:</strong>
+              <input
+                type="time"
+                name="date"
+                id="date"
+                value="17:30"
+                style="width: 140px"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>IP Address</td>
+            <td>
+              <strong>: </strong
+              ><input type="text" name="" id="" style="width: 140px" />
+            </td>
+          </tr>
+          <tr>
+            <td>Gateway IP</td>
+            <td>
+              <strong>: </strong
+              ><input type="text" name="" id="" style="width: 140px" />
+            </td>
+          </tr>
+          <tr>
+            <td>Subnet Mask</td>
+            <td>
+              <strong>: </strong
+              ><input type="text" name="" id="" style="width: 140px" />
+            </td>
+          </tr>
+          <tr>
+            <td>System Mac</td>
+            <td>
+              <strong>: </strong
+              ><input type="text" name="" id="" style="width: 140px" />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><strong>SNMP Port Configuration</strong></td>
+          </tr>
+          <tr>
+            <td>System Location</td>
+            <td>
+              <strong>: </strong
+              ><input type="text" name="" id="" style="width: 140px" />
+            </td>
+          </tr>
+          <tr>
+            <td>System Name</td>
+            <td>
+              <strong>: </strong
+              ><input type="text" name="" id="" style="width: 140px" />
+            </td>
+          </tr>
+          <tr>
+            <td>System Contact</td>
+            <td>
+              <strong>: </strong
+              ><input type="text" name="" id="" style="width: 140px" />
+            </td>
+          </tr>
+          <tr>
+            <td>Write Community</td>
+            <td>
+              <strong>: </strong
+              ><input type="text" name="" id="" style="width: 140px" />
+            </td>
+          </tr>
+          <tr>
+            <td>Manager IP</td>
+            <td>
+              <strong>: </strong
+              ><input type="text" name="" id="" style="width: 140px" />
+            </td>
+          </tr>
+        </table>
+        <div
+          style="text-align: center; margin-top: 150px; padding-right: 300px"
+        >
+          <button type="button">Update</button>
+          <div>&nbsp;</div>
+          <div class="save">
+            (Save & Reset the Unit to Reflect the New Values)
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div>
+        © 2009.<a
+          class="footer_a"
+          href="http://www.teamengineers.in/"
+          target="_blank"
+          >www.teamengineers.in</a
+        >
+      </div>
+      <div>
+        Best viewed with IE 6.0 + at resolution of 1024 X 768 with text size as
+        medium.
+      </div>
+    </footer>
+
+    <script src="sysconfig.js"></script>
+  </body>
+</html>
